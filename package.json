@@ -1,0 +1,24 @@
+{
+  "name": "nse.wsu.edu",
+  "version": "1.0.0",
+  "description": "Website of the WSU National Student Exchange (NSE) program",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invokeImmediately/nse.wsu.edu.git"
+  },
+  "keywords": [
+    "Washington",
+    "State",
+    "University"
+  ],
+  "author": "Daniel Rieck <danielcrieck@gmail.com> (https://www.linkedin.com/in/danielcrieck/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/invokeImmediately/nse.wsu.edu/issues"
+  },
+  "homepage": "https://github.com/invokeImmediately/nse.wsu.edu#readme"
+}
