@@ -7376,7 +7376,7 @@ div.auto-scroller ul li {
 }
 @media all and (min-width: 1441px) {
   body {
-    background: url(/wp-content/uploads/sites/1590/2017/06/background_nse-wsu-badge.png) bottom right no-repeat fixed, linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top repeat-x fixed;
+    background: url(/wp-content/uploads/sites/1590/2017/06/background_nse-wsu-badge.png) bottom right no-repeat fixed, linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top / 124px 124px repeat-x fixed;
   }
 }
 /*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -7433,4 +7433,12 @@ span.has-tooltip:hover:after {
   width: 16px;
   height: 16px;
   background: url(/wp-content/uploads/sites/50/2016/10/icon_indicator_tool-tip-info_16x16.png);
+}
+/*!  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*    │ MAIN +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+main {
+  padding-bottom: 34px;
+  background-color: #981e32;
 }
