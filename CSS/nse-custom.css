@@ -7440,5 +7440,5 @@ span.has-tooltip:hover:after {
 */
 main {
   padding-bottom: 34px;
-  @hex-white url(/wp-content/uploads/sites/1590/2017/06/background-graphic_main-site-pseudo-footer_990x34.jpg) center no-repeat;
+  background: #fff url(/wp-content/uploads/sites/1590/2017/06/background-graphic_main-site-pseudo-footer_990x34.jpg) center no-repeat;
 }
