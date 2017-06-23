@@ -7376,7 +7376,7 @@ div.auto-scroller ul li {
 }
 @media all and (min-width: 1441px) {
   body {
-    background: url(/wp-content/uploads/sites/1590/2017/06/background_nse-wsu-badge.png) bottom right no-repeat fixed, linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top / 124px 124px repeat-x fixed;
+    background: url(/wp-content/uploads/sites/1590/2017/06/background_nse-wsu-badge.png) bottom right / 198px 198px no-repeat fixed, linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top repeat-x fixed;
   }
 }
 /*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
