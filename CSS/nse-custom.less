@@ -1,0 +1,74 @@
+@grid-behavior: "hybrid";
+@import "..\WSU-UE---CSS\wp-master-style-sheet.less";
+
+/*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
+*   ║ #### CUSTOM LAYOUTS ################################################################################################# ║
+*   ╠=======================================================================================================================╣
+*   ║ The following sections contain layouts specific to distinguishedscholarships.wsu.edu.                                 ║
+*   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+/*!   ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*     │ ++++ Custom ID-TARGETED layouts +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*     └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+#binder {
+	& { border-right: 1px solid @rgba; .getRgbaStr(@hex-black, 0.6667); }
+	& { box-shadow: 5px 0 5px @rgba; .getRgbaStr(@hex-black,0.3333); }
+	@media all and (max-width: @v-wdscrn-bckgrnd) {
+		border-right: none;
+		box-shadow: none;
+	}
+}
+
+/*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*    │ ++++ Custom BODY layouts ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+body {
+	@media all and (max-width: @v-wdscrn-bckgrnd) {
+		background: @hex-black;
+	}
+	@media all and (min-width: (@v-wdscrn-bckgrnd+1)) and (max-width: @v-wuxga-width) {
+		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wuxga.png) repeat-y fixed right top,
+		  @hex-black  url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wuxga.jpg) repeat-y fixed right top;
+	}
+	@media all and (min-width: (@v-wuxga-width+1)) and (max-width: @v-wqxga-width) {
+		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wqxga.png) repeat-y fixed right top,
+		  @hex-black url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wqxga.jpg) repeat-y fixed right top;
+	}
+	@media all and (min-width: (@v-wqxga-width+1)) {
+		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wqxga.png) repeat-y fixed 1800px top,
+		  @hex-black url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wqxga.jpg) repeat-y fixed 1800px top;
+	}
+}
+
+/*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*    │ ++++ Custom HEADER layouts ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+header.main-header {
+	&:extend(.has-dflt-font);
+	background: url(/wp-content/uploads/sites/50/2015/02/Distinguished-Scholarships-Logo-sm-WP.png) no-repeat right bottom,
+	  url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat, rgba(42,48,51,1.00);
+	color: #fff !important;
+	@media print {
+		background: url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat,
+		  rgba(42,48,51,1.00);
+	}
+	@media all and (max-width: 1208px) {
+		background: url(/wp-content/uploads/sites/50/2015/06/Distinguished-Scholarships-Logo-sm-WP_50px-height-2.png) no-repeat right top,
+		  url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat, rgba(42,48,51,1.00);
+	}
+}
+
+.main-header sub:not(.unset), .main-header sup:not(.unset) {
+	color: #fff !important;
+}
+
+/*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
+*   ║ #### MIXIN-TOGGLED layouts ########################################################################################## ║
+*   ╠=======================================================================================================================╣
+*   ║ Mixins are used here to pull in optional layouts that can be used as desired on OUE sites.                            ║
+*   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+.use-tool-tip-indicator-icon(url(/wp-content/uploads/sites/50/2016/10/icon_indicator_tool-tip-info_16x16.png));
