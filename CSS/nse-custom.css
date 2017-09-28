@@ -7836,17 +7836,21 @@ header.main-header {
     display: none;
   }
 }
-.page.nse-home #nse-program-facts .column.participating-institutions {
+.page.nse-home #nse-program-facts .column.participating-institutions,
+.page.nse-home #nse-program-facts .column.participating-students {
   padding: 1rem;
+  font-size: 1.3rem;
+}
+.page.nse-home #nse-program-facts .column.participating-institutions {
   background-color: #000;
   color: #fff;
-  font-size: 1.3rem;
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier-wrapper {
   display: block;
   float: left;
-  height: 90px;
-  width: 28px;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: .9em;
   margin-right: 5px;
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier {
@@ -7859,6 +7863,18 @@ header.main-header {
   transform: translateY(200%) rotate(-90deg);
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .number-of-institutions {
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: .9em;
+  margin-right: 5px;
+}
+.page.nse-home #nse-program-facts .column.participating-students {
+  background-color: #d0d2d3;
+  color: #fff;
+}
+.page.nse-home #nse-program-facts .column.participating-students .number-of-wsu-students {
   display: block;
   float: left;
   font-weight: bold;
