@@ -7666,12 +7666,19 @@ main {
 *    └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 header.main-header {
-  background: #981e32 url(/wp-content/uploads/sites/1590/2017/09/background-graphic_main-site-header_990x142.jpg) center top / cover no-repeat;
+  background: #981e32 url(/wp-content/uploads/sites/1590/2017/06/background-graphic_main-site-header_990x142.jpg) center top / cover no-repeat;
   color: #fff !important;
 }
 .main-header sub:not(.unset),
 .main-header sup:not(.unset) {
   color: #fff !important;
+}
+/*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
+*   ║ #### PAGe-SPECIFIC styles & layouts ################################################################################# ║
+*   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+.page.nse-home #main-banner .column.one {
+  height: 560px;
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
 *   ║ #### MIXIN-TOGGLED layouts ########################################################################################## ║
