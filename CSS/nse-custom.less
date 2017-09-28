@@ -120,6 +120,12 @@ header.main-header {
 				}
 			}
 			&.participating-students {
+				@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 33.33333%;
+				}
 				background-color: #9aa1a6;
 				color: @hex-white;
 				.number-of-wsu-students {
@@ -127,6 +133,12 @@ header.main-header {
 				}
 			}
 			&.washington-institutions {
+				@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 66.66667%;
+				}
 				background-color: @hex-bright-crimson;
 				color: @hex-white;
 				.washington-institutions {
