@@ -73,6 +73,16 @@ header.main-header {
 			}
 		}
 	}
+	.show-with-right-columns {
+		@media all and (max-width: @v-rghtclmn-thrshld) {
+			display: none;
+		}
+	}
+	.hide-with-right-columns {
+		@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
+			display: none;
+		}
+	}
 }
 
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
