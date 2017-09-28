@@ -7837,17 +7837,22 @@ header.main-header {
   }
 }
 .page.nse-home #nse-program-facts .column.participating-institutions {
+  padding: 1rem;
   background-color: #000;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier-wrapper {
   display: block;
   float: left;
+  height: 90px;
+  width: 28px;
+  margin-right: 5px;
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier {
   display: block;
   text-transform: uppercase;
+  font-size: 22px;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -7857,6 +7862,7 @@ header.main-header {
   float: left;
   font-weight: bold;
   font-size: 2em;
+  margin-right: 5px;
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
 *   ║ #### MIXIN-TOGGLED layouts ########################################################################################## ║
