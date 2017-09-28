@@ -12,10 +12,8 @@
 *     └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 #binder {
-	& { border-right: 1px solid @rgba; .getRgbaStr(@hex-black, 0.6667); }
 	& { box-shadow: 5px 0 5px @rgba; .getRgbaStr(@hex-black,0.3333); }
 	@media all and (max-width: @v-wdscrn-bckgrnd) {
-		border-right: none;
 		box-shadow: none;
 	}
 }
@@ -25,21 +23,23 @@
 *    └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 body {
-	@media all and (max-width: @v-wdscrn-bckgrnd) {
-		background: @hex-black;
+	@media all {
+		@media (max-width: @v-wdscrn-bckgrnd) {
+			background: #23282b;
+		}
+		@media (min-width: (@v-wdscrn-bckgrnd+1)) {
+			background: linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent),
+				#969a9d  url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top repeat-x fixed;
+		}
 	}
-	@media all and (min-width: (@v-wdscrn-bckgrnd+1)) and (max-width: @v-wuxga-width) {
-		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wuxga.png) repeat-y fixed right top,
-		  @hex-black  url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wuxga.jpg) repeat-y fixed right top;
-	}
-	@media all and (min-width: (@v-wuxga-width+1)) and (max-width: @v-wqxga-width) {
-		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wqxga.png) repeat-y fixed right top,
-		  @hex-black url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wqxga.jpg) repeat-y fixed right top;
-	}
-	@media all and (min-width: (@v-wqxga-width+1)) {
-		background: url(/wp-content/uploads/sites/50/2016/05/DSP-Logo-Tiling_wqxga.png) repeat-y fixed 1800px top,
-		  @hex-black url(/wp-content/uploads/sites/50/2016/05/bg-431-gray-0.26-K_wqxga.jpg) repeat-y fixed 1800px top;
-	}
+}
+
+/*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+*    │ ++++ Custom MAIN layouts ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ │
+*    └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+main {
+	background-color: @hex-white;
 }
 
 /*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -48,21 +48,31 @@ body {
 */
 header.main-header {
 	&:extend(.has-dflt-font);
-	background: url(/wp-content/uploads/sites/50/2015/02/Distinguished-Scholarships-Logo-sm-WP.png) no-repeat right bottom,
-	  url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat, rgba(42,48,51,1.00);
+	background: @hex-crimson url(/wp-content/uploads/sites/1590/2017/06/background-graphic_main-site-header_990x142.jpg) center top/cover no-repeat;
 	color: #fff !important;
-	@media print {
-		background: url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat,
-		  rgba(42,48,51,1.00);
-	}
-	@media all and (max-width: 1208px) {
-		background: url(/wp-content/uploads/sites/50/2015/06/Distinguished-Scholarships-Logo-sm-WP_50px-height-2.png) no-repeat right top,
-		  url(/wp-content/uploads/sites/50/2015/04/seamless-marble-texture_528x528.png) left top repeat, rgba(42,48,51,1.00);
-	}
 }
 
 .main-header sub:not(.unset), .main-header sup:not(.unset) {
 	color: #fff !important;
+}
+
+/*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
+*   ║ #### PAGe-SPECIFIC styles & layouts ################################################################################# ║
+*   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+*/
+.page.nse-home {
+	#main-banner {
+		.column.one {
+			height: 0;
+			padding-bottom: 47.138047138%;
+			background-position: center;
+			background-size: auto 100%;
+			@media all and (max-width: @v-rghtclmn-thrshld) {
+				height: 320px;
+				padding-bottom: 0;
+			}
+		}
+	}
 }
 
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
@@ -72,3 +82,6 @@ header.main-header {
 *   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 */
 .use-tool-tip-indicator-icon(url(/wp-content/uploads/sites/50/2016/10/icon_indicator_tool-tip-info_16x16.png));
+
+@pseudo-footer-bg: { background: @hex-white url(/wp-content/uploads/sites/1590/2017/09/background-graphic_main-site-pseudo-footer_1188x34.jpg) bottom center no-repeat; };
+.use-main-pseudo-footer(@pseudo-footer-bg, 34px);
