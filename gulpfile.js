@@ -1,5 +1,5 @@
 var compiledCssSrcFileName = 'nse-custom.css',
-	minCssFileHeaderStr = '/* Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/distinguishedscholarships.wsu.edu] for a repository of source code. */\r\n',
+	minCssFileHeaderStr = '/*! Built with the LESS CSS preprocessor [http://lesscss.org/]. Please see [https://github.com/invokeImmediately/nse.wsu.edu] for a repository of source code. */\r\n',
 	gulp = require('gulp'),
 	lessc = require('gulp-less'),
 	gcmq = require('gulp-group-css-media-queries'),
