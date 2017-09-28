@@ -84,32 +84,48 @@ header.main-header {
 		}
 	}
 	#nse-program-facts {
-		.column.participating-institutions {
-			padding: (@v-dflt-spcng / 2);
-			background-color: @hex-black;
-			color: @hex-white;
-			font-size: (@v-clmn-sz * 13 / 10);
-			.qualifier-wrapper {
-				display: block;
-				float: left;
-				height: 90px;
-				width: 28px;
-				margin-right: 5px;
-			}
-			.qualifier {
-				display: block;
-				text-transform: uppercase;
-				font-size: 22px;
-				font-weight: bold;
-				.transform(~"translateY(200%) rotate(-90deg)");
-			}
-			.number-of-institutions {
+		.column {
+			.floating-number-style() {
 				display: block;
 				float: left;
 				font-weight: bold;
 				font-size: 3em;
 				line-height: .9em;
 				margin-right: 5px;
+			}
+			&.participating-institutions,
+			&.participating-students {
+				padding: (@v-dflt-spcng / 2);
+				font-size: (@v-clmn-sz * 13 / 10);
+			}
+			&.participating-institutions {
+				background-color: @hex-black;
+				color: @hex-white;
+				.qualifier-wrapper {
+					.floating-number-style();
+				}
+				.qualifier {
+					display: block;
+					text-transform: uppercase;
+					font-size: 22px;
+					font-weight: bold;
+					.transform(~"translateY(200%) rotate(-90deg)");
+				}
+				.number-of-institutions {
+					display: block;
+					float: left;
+					font-weight: bold;
+					font-size: 3em;
+					line-height: .9em;
+					margin-right: 5px;
+				}
+			}
+			&.participating-students {
+				background-color: #d0d2d3;
+				color: @hex-white;
+				.number-of-wsu-students {
+					.floating-number-style();
+				}
 			}
 		}
 	}
