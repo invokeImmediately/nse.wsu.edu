@@ -7837,7 +7837,8 @@ header.main-header {
   }
 }
 .page.nse-home #nse-program-facts .column.participating-institutions,
-.page.nse-home #nse-program-facts .column.participating-students {
+.page.nse-home #nse-program-facts .column.participating-students,
+.page.nse-home #nse-program-facts .column.washington-institutions {
   padding: 1rem;
   font-size: 1.3rem;
 }
@@ -7899,6 +7900,7 @@ header.main-header {
     top: 0;
     bottom: 0;
     left: 66.66667%;
+    width: 33.34%;
   }
 }
 .page.nse-home #nse-program-facts .column.washington-institutions .washington-institutions {
