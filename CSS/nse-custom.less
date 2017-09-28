@@ -57,7 +57,7 @@ header.main-header {
 }
 
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
-*   ║ #### PAGe-SPECIFIC styles & layouts ################################################################################# ║
+*   ║ #### PAGE-SPECIFIC styles & layouts ################################################################################# ║
 *   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 */
 .page.nse-home {
@@ -81,6 +81,28 @@ header.main-header {
 	.hide-with-right-columns {
 		@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
 			display: none;
+		}
+	}
+	#nse-program-facts {
+		.column.participating-institutions {
+			background-color: @hex-black;
+			color: @hex-white;
+			font-size: 2rem;
+			.qualifier-wrapper {
+				display: block;
+				float: left;
+			}
+			.qualifier {
+				display: block;
+				text-transform: uppercase;
+				.transform(~"rotate(-90deg)");
+			}
+			.number-of-institutions {
+				display: block;
+				float: left;
+				font-weight: bold;
+				font-size: 2em;
+			}
 		}
 	}
 }
