@@ -7848,9 +7848,8 @@ header.main-header {
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier-wrapper {
   display: block;
   float: left;
-  font-weight: bold;
-  font-size: 3em;
-  line-height: .9em;
+  height: 90px;
+  width: 28px;
   margin-right: 5px;
 }
 .page.nse-home #nse-program-facts .column.participating-institutions .qualifier {
