@@ -145,7 +145,7 @@ header.main-header {
 						top: 0;
 						bottom: 0;
 						left: 66.66666%;
-						width: 33.34%; // Addresses rounding error in Chrome
+						width: 33.4%; // Required to addresses rounding error in IE11, Edge; Chrome, Firefox work with 33.34%
 					}
 					@media (max-width: @v-rghtclmn-thrshld) {
 						min-height: 163px;
