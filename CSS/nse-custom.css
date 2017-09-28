@@ -1570,8 +1570,18 @@ aside.shield-themed {
 aside.shield-themed.floats-left {
   float: left;
 }
+@media all and (min-width: 694px) {
+  aside.shield-themed.floats-left {
+    margin-right: 2rem;
+  }
+}
 aside.shield-themed.floats-right {
   float: right;
+}
+@media all and (min-width: 694px) {
+  aside.shield-themed.floats-right {
+    margin-left: 2rem;
+  }
 }
 @media all and (min-width: 694px) {
   aside.shield-themed.floats-left,
@@ -7814,6 +7824,16 @@ header.main-header {
   .page.nse-home #main-banner .column.one {
     height: 320px;
     padding-bottom: 0;
+  }
+}
+@media all and (max-width: 693px) {
+  .page.nse-home .show-with-right-columns {
+    display: none;
+  }
+}
+@media all and (min-width: 694px) {
+  .page.nse-home .hide-with-right-columns {
+    display: none;
   }
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
