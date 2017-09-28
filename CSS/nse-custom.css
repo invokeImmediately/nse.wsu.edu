@@ -7873,6 +7873,14 @@ header.main-header {
   background-color: #9aa1a6;
   color: #fff;
 }
+@media all and (min-width: 694px) {
+  .page.nse-home #nse-program-facts .column.participating-students {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33.33333%;
+  }
+}
 .page.nse-home #nse-program-facts .column.participating-students .number-of-wsu-students {
   display: block;
   float: left;
@@ -7884,6 +7892,14 @@ header.main-header {
 .page.nse-home #nse-program-facts .column.washington-institutions {
   background-color: #c60c30;
   color: #fff;
+}
+@media all and (min-width: 694px) {
+  .page.nse-home #nse-program-facts .column.washington-institutions {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 66.66667%;
+  }
 }
 .page.nse-home #nse-program-facts .column.washington-institutions .washington-institutions {
   display: block;
