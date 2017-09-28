@@ -7631,12 +7631,10 @@ div.auto-scroller ul li {
 *     └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 #binder {
-  border-right: 1px solid rgba(0, 0, 0, 0.6667);
   box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3333);
 }
 @media all and (max-width: 1440px) {
   #binder {
-    border-right: none;
     box-shadow: none;
   }
 }
@@ -7651,7 +7649,7 @@ div.auto-scroller ul li {
 }
 @media all and (min-width: 1441px) {
   body {
-    background: url(/wp-content/uploads/sites/1590/2017/06/background_nse-wsu-badge.png) bottom right / 198px 198px no-repeat fixed, linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top repeat-x fixed;
+    background: linear-gradient(to right, #23282b, #23282b 50%, transparent 50%, transparent), #969a9d url(/wp-content/uploads/sites/1590/2017/06/background-graphic_body_tileable-pattern_20x600.jpg) left top repeat-x fixed;
   }
 }
 /*!  ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -7678,7 +7676,16 @@ header.main-header {
 *   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 */
 .page.nse-home #main-banner .column.one {
-  height: 560px;
+  height: 0;
+  padding-bottom: 47.138047138%;
+  background-position: center;
+  background-size: auto 100%;
+}
+@media all and (max-width: 693px) {
+  .page.nse-home #main-banner .column.one {
+    height: 320px;
+    padding-bottom: 0;
+  }
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
 *   ║ #### MIXIN-TOGGLED layouts ########################################################################################## ║
