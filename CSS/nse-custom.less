@@ -94,7 +94,8 @@ header.main-header {
 				margin-right: 5px;
 			}
 			&.participating-institutions,
-			&.participating-students {
+			&.participating-students,
+			&.washington-institutions {
 				padding: (@v-dflt-spcng / 2);
 				font-size: (@v-clmn-sz * 13 / 10);
 			}
@@ -138,6 +139,7 @@ header.main-header {
 					top: 0;
 					bottom: 0;
 					left: 66.66667%;
+					width: 33.34%; // Addresses rounding error in Chrome
 				}
 				background-color: @hex-bright-crimson;
 				color: @hex-white;
