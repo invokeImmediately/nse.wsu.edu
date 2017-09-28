@@ -121,11 +121,16 @@ header.main-header {
 				}
 			}
 			&.participating-students {
-				@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 33.33333%;
+				@media all {
+					@media (min-width: (@v-rghtclmn-thrshld + 1)) {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 33.33333%;
+					}
+					@media (max-width: @v-rghtclmn-thrshld) {
+						min-height: 163px;
+					}
 				}
 				background-color: #9aa1a6;
 				color: @hex-white;
@@ -134,12 +139,17 @@ header.main-header {
 				}
 			}
 			&.washington-institutions {
-				@media all and (min-width: (@v-rghtclmn-thrshld + 1)) {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 66.66667%;
-					width: 33.34%; // Addresses rounding error in Chrome
+				@media all {
+					@media (min-width: (@v-rghtclmn-thrshld + 1)) {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 66.66667%;
+						width: 33.34%; // Addresses rounding error in Chrome
+					}
+					@media (max-width: @v-rghtclmn-thrshld) {
+						min-height: 163px;
+					}
 				}
 				background-color: @hex-bright-crimson;
 				color: @hex-white;
