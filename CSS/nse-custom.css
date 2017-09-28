@@ -7811,7 +7811,7 @@ header.main-header {
   color: #fff !important;
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
-*   ║ #### PAGe-SPECIFIC styles & layouts ################################################################################# ║
+*   ║ #### PAGE-SPECIFIC styles & layouts ################################################################################# ║
 *   ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 */
 .page.nse-home #main-banner .column.one {
@@ -7835,6 +7835,28 @@ header.main-header {
   .page.nse-home .hide-with-right-columns {
     display: none;
   }
+}
+.page.nse-home #nse-program-facts .column.participating-institutions {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+}
+.page.nse-home #nse-program-facts .column.participating-institutions .qualifier-wrapper {
+  display: block;
+  float: left;
+}
+.page.nse-home #nse-program-facts .column.participating-institutions .qualifier {
+  display: block;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.page.nse-home #nse-program-facts .column.participating-institutions .number-of-institutions {
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 2em;
 }
 /*! ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗ 
 *   ║ #### MIXIN-TOGGLED layouts ########################################################################################## ║
